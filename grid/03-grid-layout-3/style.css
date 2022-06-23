@@ -66,6 +66,9 @@ ul {
   background-color: #FF7755;
 
   grid-area: sidebar;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -77,6 +80,9 @@ ul {
 }
 
 .photo  {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  align-items: center;
 }
 
 .sidebar .side-content {
@@ -84,6 +90,10 @@ ul {
   color: black;
   font-size: 16px;
   font-weight: normal;
+
+  display: grid;
+  grid-template: 1fr / 1fr;
+  align-items: center;
 }
 
 .nav {
