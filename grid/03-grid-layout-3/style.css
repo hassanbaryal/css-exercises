@@ -39,7 +39,6 @@ ul {
   grid-area: header;
   display: grid;
   grid-template: 1fr / 1fr 4fr;
-  gap: 500px;
 }
 
 .logo {
