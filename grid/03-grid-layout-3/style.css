@@ -3,15 +3,17 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   text-align: center;
-  height: inherit;
   display: grid;
 
-  grid-template-rows: 1fr 0.33fr 2.5fr 0.33fr;
+  grid-template-rows: 0.5fr 0.167fr 8fr 0.167fr;
   grid-template-columns: 1fr 4fr;
   gap: 4px;
-  justify-content: center;
   
   grid-template-areas: "header header"
         "sidebar nav"
@@ -32,6 +34,7 @@
 
 .header {
   background-color: #393f4d;
+  font-weight: bolder;
 
   grid-area: header;
   display: grid;
@@ -40,19 +43,18 @@
 }
 
 .logo {
-  justify-items: center;
-  align-items: center;
-  text-align: center;
+
+  
 }
 
 .menu {
+  margin: auto 0;
 }
 
 .menu ul {
-  list-style-type: none;
-
+  
   display: grid;
-  grid-template: 1fr / repeat(4, 1fr);
+  grid-template: minmax(0, 1fr) / repeat(4, 1fr);
 }
 
 .menu ul,
@@ -92,6 +94,8 @@
 }
 
 .nav ul {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
 }
 
 .nav ul li {
